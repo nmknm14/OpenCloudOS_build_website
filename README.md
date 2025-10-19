@@ -1,0 +1,2 @@
+# OpenCloudOS_build_website
+使用opencloudos搭建网站，并使用frp进行反代
