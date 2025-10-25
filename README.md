@@ -94,6 +94,11 @@ sudo systemctl reload nginx
 ```bash
 sudo systemctl disable --now firewalld
 ```
+11. 关闭SELinux（如果启用）
+    
+```bash
+sudo setenforce 0
+```
 
 ## 启用frp中转，反代网站
 
