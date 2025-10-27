@@ -94,12 +94,22 @@ sudo systemctl reload nginx
 ```bash
 sudo systemctl disable --now firewalld
 ```
-11. 关闭SELinux（如果启用）
+11. 临时关闭SELinux（如果启用的话）
     
 ```bash
 sudo setenforce 0
 ```
+11. 永久关闭SELinux（如果启用的话）
+    
+```bash
+打开下述文件：/etc/selinux/config
 
+将 SELINUX=enforcing  更改为 SELINUX=disabled，然后保存文件。
+
+根据您的操作系统和分配，您可能需要重启机器，使变更生效。
+
+在命令行中输入 sestatus，确认状态。
+```
 ## 启用frp中转，反代网站
 
 为了使您的网站能够通过frp进行访问，您需要进行以下配置：
