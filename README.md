@@ -103,18 +103,15 @@ sudo setenforce 0
     
 ```bash
 打开下述文件：/etc/selinux/config
-
 将 SELINUX=enforcing  更改为 SELINUX=disabled，然后保存文件。
-
 根据您的操作系统和分配，您可能需要重启机器，使变更生效。
-
 在命令行中输入 sestatus，确认状态。
 ```
 13.解压zip文件
-'''bash
+```bash
 解压：unzip FileName.zip
 压缩：zip FileName.zip DirName
-'''
+```
 ## 启用frp中转，反代网站
 
 为了使您的网站能够通过frp进行访问，您需要进行以下配置：
