@@ -99,7 +99,7 @@ sudo systemctl disable --now firewalld
 ```bash
 sudo setenforce 0
 ```
-11. 永久关闭SELinux（如果启用的话）
+12. 永久关闭SELinux（如果启用的话）
     
 ```bash
 打开下述文件：/etc/selinux/config
@@ -110,6 +110,11 @@ sudo setenforce 0
 
 在命令行中输入 sestatus，确认状态。
 ```
+13.解压zip文件
+'''bash
+解压：unzip FileName.zip
+压缩：zip FileName.zip DirName
+'''
 ## 启用frp中转，反代网站
 
 为了使您的网站能够通过frp进行访问，您需要进行以下配置：
