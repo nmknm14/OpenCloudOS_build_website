@@ -112,6 +112,11 @@ sudo setenforce 0
 解压：unzip FileName.zip
 压缩：zip FileName.zip DirName
 ```
+14.安装mariadb([官方帮助](https://docs.opencloudos.org/en/OCS/Typical_Application_Deployment/MariaDB_guide/))
+```bash
+sudo apt-get install mariadb-server
+sudo mysql_secure_installation
+```
 ## 启用frp中转，反代网站
 
 为了使您的网站能够通过frp进行访问，您需要进行以下配置：
